@@ -49,8 +49,10 @@ body{
 /* home section */
 
 .home-section.active,
-.project-section.active
-.about-section.active{
+.project-section.active,
+.about-section.active,
+.education-section.active,
+.contact-section.active{
     position: relative;
     opacity: 1;
     z-index: 8;
@@ -338,16 +340,22 @@ body{
     color: #52ff4f;
 }
 
-/*timeline*/
-.timeline{
-    display: block;
-    width: 80%;
-    margin: 150px auto;
+/*education-section*/
+.education-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: 1s
 }
 
-.timeline .heading{
+.education-section .heading{
     margin-bottom: 150px;
 }
+
+
 
 .card{
     width: 45%;
@@ -449,8 +457,9 @@ body{
 }
 
 .contact-section{
-    position: relative;
+    position: absolute;
     top: 0;
+    opacity: 0;
     transition: 1s;
     padding: 100px 150px;
     height: 100vh;
@@ -491,4 +500,19 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
