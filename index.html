@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UACompatible" content="IE=edge">
@@ -8,98 +9,170 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 
     <!-- navbar-->
-     <nav class="navbar">
+    <nav class="navbar">
         <ul class="link-group">
             <li class="link active"><a href="#">home</a></li>
             <li class="link"><a href="#">projects</a></li>
             <li class="link"><a href="#">about</a></li>
             <li class="link"><a href="#">education</a></li>
+            <li class="link"><a href="#">blog</a></li>
             <li class="link"><a href="#">contact</a></li>
-        </ul>  
+        </ul>
 
-     </nav>
-     <!-- Home section -->
+    </nav>
+    <!-- Home section -->
 
-     <section class="home-section active">
-        <h1 class="hero-heading">hello, i  am <br> abrar</h1>
-        <img src="img/mypic.jpg"  class="home-img" alt="">
-     </section>
- 
-     <!--Project Section-->
-     <section class="project-section">
-        <h1 class="project-heading">some of my projects</h1>
+    <section class="home-section active">
+        <h1 class="hero-heading">hello, i am <br> abrar</h1>
+        <div class="social-pill">
+            <a href="https://www.instagram.com/your_username" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.facebook.com/your_username" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.linkedin.com/in/your_username" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/your_username" target="_blank">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/your_username" target="_blank">
+                <img src="img/twitter.png" alt="LinkedIn">
+            </a>
+        </div>
+        <img src="img/mypic.jpg" class="home-img" alt="">
+    </section>
+
+    <!--Project Section-->
+    <section class="project-section">
+        <h1 class="project-heading">my projects</h1>
         <div class="project-container">
             <div class="project-card">
-                 <img src="img/project1.jpg" class="project-img" alt="">
-                 <div class="project-content">
+                <img src="img/project1.jpg" class="project-img" alt="">
+                <div class="project-content">
                     <h1 class="project-title">project 01 <br> Snake Game </h1>
                     <p class="project-info">
-                        Revived the iconic Snake game in the browser, where the player controls a lengthening serpent munching pellets amid escalating speed, dodging walls and self-collisions for high scores.
+                        Revived the iconic Snake game in the browser, where the player controls a lengthening serpent
+                        munching pellets amid escalating speed, dodging walls and self-collisions for high scores.
                     </p>
                     <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                         <button class="project-btn live">see live</button>
+                        <button class="project-btn github"
+                            onclick="window.open('https://github.com/abrar791/snake-game', '_blank')">github
+                            repo</button>
+                        <button class="project-btn live"
+                            onclick="window.open('https://abrar791.github.io/snake-game/', '_blank')">see live</button>
                     </div>
-                 </div>
+                </div>
             </div>
             <div class="project-card">
-                 <img src="img/project2.jpg" alt="" class="project-img">
-                 <div class="project-content">
+                <img src="img/project2.jpg" alt="" class="project-img">
+                <div class="project-content">
                     <h1 class="project-title">project 02 <br> Calculator</h1>
                     <p class="project-info">
-                        A sleek, responsive calculator app that handles basic arithmetic, advanced functions like sqrt and percentages, and a clean interface for quick computations on any device.
+                        A sleek, responsive calculator app that handles basic arithmetic, advanced functions like sqrt
+                        and percentages, and a clean interface for quick computations on any device.
 
                     </p>
                     <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                         <button class="project-btn live">see live</button>
+                        <button class="project-btn github"
+                            onclick="window.open('https://github.com/abrar791/calculator', '_blank')">github
+                            repo</button>
+                        <button class="project-btn live"
+                            onclick="window.open('https://abrar791.github.io/calculator/', '_blank')">see live</button>
                     </div>
-                 </div>
+                </div>
             </div>
             <div class="project-card">
-                 <img src="img/project3.jpg" alt="" class="project-img">
-                 <div class="project-content">
+                <img src="img/project3.jpg" alt="" class="project-img">
+                <div class="project-content">
                     <h1 class="project-title">project 03 <br> Rock Paper Scissors</h1>
                     <p class="project-info">
-                        Classic Rock Paper Scissors showdown in the browser: Players choose rock, paper, or scissors against a smart AI opponent, tallying wins, losses, and ties with instant feedback and score resets.
+                        Classic Rock Paper Scissors showdown in the browser: Players choose rock, paper, or scissors
+                        against a smart AI opponent, tallying wins, losses, and ties with instant feedback and score
+                        resets.
 
                     </p>
                     <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                         <button class="project-btn live">see live</button>
+                        <button class="project-btn github"
+                            onclick="window.open('https://github.com/abrar791/rock-paper-scissors', '_blank')">github
+                            repo</button>
+                        <button class="project-btn live"
+                            onclick="window.open(' https://abrar791.github.io/rock-paper-scissors/', '_blank')">see
+                            live</button>
                     </div>
-                 </div>
+                </div>
             </div>
             <div class="project-card">
-                 <img src="img/project4.jpg" alt="" class="project-img">
-                 <div class="project-content">
+                <img src="img/project4.jpg" alt="" class="project-img">
+                <div class="project-content">
                     <h1 class="project-title">project 04 <br> Flappy bird </h1>
                     <p class="project-info">
-                        Recreated the infamously addictive Flappy Bird as a browser-based challenge, where players tap to navigate a bird through endless pipes, battling gravity for the ultimate high score.
+                        Recreated the infamously addictive Flappy Bird as a browser-based challenge, where players tap
+                        to navigate a bird through endless pipes, battling gravity for the ultimate high score.
 
                     </p>
                     <div class="project-btn-grp">
-                        <button class="project-btn github" onclick="window.open('https://github.com/abrar791/flappybird', '_blank')">github repo</button>
-                        <button class="project-btn live" onclick="window.open('https://abrar791.github.io/flappybird/', '_blank')">see live</button>
+                        <button class="project-btn github"
+                            onclick="window.open('https://github.com/abrar791/flappybird', '_blank')">github
+                            repo</button>
+                        <button class="project-btn live"
+                            onclick="window.open('https://abrar791.github.io/flappybird/', '_blank')">see live</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project5.avif" alt="" class="project-img">
+                <div class="project-content">
+                    <h1 class="project-title">project 05 <br> Pacman </h1>
+                    <p class="project-info">
+                        A nostalgic Pacman clone built in the browser, where players navigate a maze as the iconic
+                        yellow chomper, gobbling pellets and power-ups while outsmarting colorful ghosts in real-time
+                        chases for high scores.
+
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github"
+                            onclick="window.open('https://github.com/abrar791/pacman', '_blank')">github
+                            repo</button>
+                        <button class="project-btn live"
+                            onclick="window.open(' https://abrar791.github.io/pacman/', '_blank')">see live</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
-                
-     </section>
 
-     <!--about section-->
-     <section class="about-section">
+    </section>
+
+    <!--about section-->
+    <section class="about-section">
         <div class="about">
             <div class="about-img-container">
                 <img src="img/mypic.jpg" class="about-img" alt="">
                 <button class="download-cv-btn">download cv</button>
             </div>
-            <p class="about-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quod, similique atque nobis repellat cupiditate dolor sint officiis rem maiores commodi numquam, excepturi nemo a deserunt, aliquam iure? Asperiores nisi sint laboriosam. Soluta praesentium, mollitia dolorem aperiam animi, optio pariatur odit consectetur totam ullam sapiente minima impedit odio, repudiandae repellendus consequuntur? Laudantium repellat et quas doloremque iusto rem repudiandae explicabo ullam iure eaque ab, nisi vero quisquam? Neque repellendus in quisquam iusto laboriosam laudantium voluptatem voluptas at ratione quam voluptatum, commodi cum doloribus eos distinctio illum odit saepe quaerat ipsa id sit necessitatibus pariatur quidem ea? Necessitatibus ea culpa explicabo inventore. Nihil veritatis asperiores unde architecto cupiditate vitae cum distinctio laborum perspiciatis sint atque placeat non consequuntur dolore magni, reiciendis culpa expedita consectetur suscipit quaerat labore hic numquam dolores ullam? Quasi excepturi nemo vel doloribus dignissimos provident aperiam at recusandae! Repellat ipsum inventore asperiores dolorum consectetur a ratione distinctio delectus!</p>
+            <div class="about-content">
+                <h2 class="about-heading">About Me</h2>
+
+                <p class="about-info">
+                    I’m Abrar, currently pursuing a Bachelor of Science in Computer Science & Engineering (BSc in CSE)
+                    at the International Islamic University Chittagong (IIUC). I have a strong interest in programming,
+                    problem-solving, and building practical software solutions. Through my academic journey, I’ve
+                    developed a solid foundation in core computer science concepts and continuously improve my skills
+                    through learning, practice, and personal projects. My goal is to grow as a skilled software
+                    developer, gain real-world experience, and contribute to meaningful and impactful technology
+                    solutions.
+                </p>
+            </div>
         </div>
 
         <!--skills -->
@@ -109,86 +182,144 @@
                 <div class="skill-card">
                     <img src="img/c.jpg" class="skill-img" alt="">
                     <div class="skill-level">98%</div>
-                    <h1 class=""skill-name>C</h1>
+                    <h1 class="" skill-name>C</h1>
                     <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque?</p>
                 </div>
                 <div class="skill-card">
                     <img src="img/c++.jpg" class="skill-img" alt="">
                     <div class="skill-level">98%</div>
-                    <h1 class=""skill-name>C++</h1>
+                    <h1 class="" skill-name>C++</h1>
                     <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque?</p>
                 </div>
                 <div class="skill-card">
                     <img src="img/html.png" class="skill-img" alt="">
                     <div class="skill-level">98%</div>
-                    <h1 class=""skill-name>HTML</h1>
+                    <h1 class="" skill-name>HTML</h1>
                     <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque?</p>
                 </div>
                 <div class="skill-card">
                     <img src="img/css.png" class="skill-img" alt="">
                     <div class="skill-level">70%</div>
-                    <h1 class=""skill-name>CSS</h1>
+                    <h1 class="" skill-name>CSS</h1>
                     <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque?</p>
                 </div>
                 <div class="skill-card">
                     <img src="img/js.png" class="skill-img" alt="">
                     <div class="skill-level">30%</div>
-                    <h1 class=""skill-name>JS</h1>
+                    <h1 class="" skill-name>JS</h1>
                     <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque?</p>
                 </div>
                 <div class="skill-card">
                     <img src="img/nodejs.png" class="skill-img" alt="">
                     <div class="skill-level">0%</div>
-                    <h1 class=""skill-name>NODEJS</h1>
+                    <h1 class="" skill-name>NODEJS</h1>
                     <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, atque?</p>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!--education-->
-     <section class="education-section">
+    <!--education-->
+    <section class="education-section">
         <h1 class="heading">education</h1>
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">2014-2020</h1>
-                <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, optio.</p>
+                <p class="card-detail">Chittagong Collegiate School</p>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">2014-2020</h1>
-                <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, optio.</p>
+                <p class="card-detail">Secondary School Education (Class 4–10)</p>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">2020-2022</h1>
-                <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, optio.</p>
+                <p class="card-detail">Chattogram Govt. Bakolia College</p>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">2020-2022</h1>
-                <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, optio.</p>
+                <p class="card-detail">Higher Secondary Education (Science)</p>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">2024-2028</h1>
-                <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, optio.</p>
+                <p class="card-detail">International Islamic University Chittagong</p>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">2024-2028</h1>
-                <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, optio.</p>
+                <p class="card-detail">Bachelor of Science in Computer Science & Engineering <br> (BSc in CSE)</p>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!--contact section-->
-     <section class="contact-section">
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h1 class="blog-heading">my blogs</h1>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="img/blog1.png" class="blog-img" alt="Blog 1"> <!-- Update path to your img -->
+                <div class="blog-content">
+                    <h2 class="blog-title center-title">My Journey into Computer Science as a Beginner</h2>
+                    <span class="blog-date">Posted on: 15 Dec 2025</span>
+                    <p class="blog-desc">I am currently a 3rd semester Computer Science and Engineering (CSE) student,
+                        and this is my first time creating a personal portfolio website. When I first started studying
+                        computer science, everything felt confusing and overwhelming. Terms like programming,
+                        algorithms, and data structures were completely new to me.
+                        Slowly, I began learning the basics such as how computers work, what programming languages are,
+                        and why logic is important in coding. I realized that computer science is not about memorizing
+                        code, but about problem solving and thinking logically.
+                        This portfolio represents my learning journey. I may not be an expert yet, but I am continuously
+                        improving my skills step by step. I believe consistency and practice will help me become a
+                        better programmer in the future.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="img/blog2.png" class="blog-img" alt="Blog 2"> <!-- Update path -->
+                <div class="blog-content">
+                    <h2 class="blog-title center-title">What I Learned While Building My First Portfolio Website</h2>
+                    <span class="blog-date">Posted on: 16 Dec 2025</span>
+                    <p class="blog-desc">Building my first portfolio website was both exciting and challenging. As a
+                        beginner, I learned the basics of HTML and CSS while creating different sections such as Home,
+                        About, Projects, and Blog.
+                        HTML helped me structure the content of the website, while CSS helped me design and style it. I
+                        learned how to use headings, paragraphs, images, and links properly. Styling elements like
+                        colors, spacing, and layouts taught me how design plays an important role in user experience.
+                        Even though I faced many errors and bugs, fixing them helped me understand web development
+                        better. This project boosted my confidence and motivated me to learn more about frontend
+                        development.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="img/blog3.png" class="blog-img" alt="Blog 3"> <!-- Update path -->
+                <div class="blog-content">
+                    <h2 class="blog-title center-title">Why I Chose Computer Science and My Future Goals</h2>
+                    <span class="blog-date">Posted on: 16 Dec 2025</span>
+                    <p class="blog-desc">I chose Computer Science and Engineering because technology is shaping the
+                        future, and I want to be a part of it. From software development to artificial intelligence,
+                        computer science offers endless opportunities to learn and grow.
+                        As a student, my current goal is to strengthen my fundamentals in programming, data structures,
+                        and web development. I want to build small projects to improve my practical skills and gain
+                        real-world experience.
+                        In the future, I hope to become a skilled software developer and contribute to meaningful
+                        projects. This portfolio is the first step toward achieving my career goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--contact section-->
+    <section class="contact-section">
         <form class="contact-form">
             <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
             <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
@@ -197,12 +328,16 @@
         </form>
         <!--map-->
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.397925382059!2d91.81093637507051!3d22.338598879659035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd93f16226da5%3A0x7014e4aa99a8b023!2sMistiripara%2Cdewanhat!5e0!3m2!1sen!2sbd!4v1765723721549!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.397925382059!2d91.81093637507051!3d22.338598879659035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd93f16226da5%3A0x7014e4aa99a8b023!2sMistiripara%2Cdewanhat!5e0!3m2!1sen!2sbd!4v1765723721549!5m2!1sen!2sbd"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-     </section>
+    </section>
 
 
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>

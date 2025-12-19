@@ -25,6 +25,60 @@ body{
     z-index: 9;
     background: #1a1a1a;
 }
+
+/* Hamburger toggle button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .link-group {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 200px;
+        height: calc(100vh - 60px);
+        background: #1a1a1a;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-top: 30px;
+        transition: 0.3s;
+        z-index: 99;
+    }
+
+    .link-group.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 .link-group{
     list-style: none;
     display: flex;
@@ -44,26 +98,46 @@ body{
     opacity: 1;
 }
 
-
-
 /* home section */
 
 .home-section.active,
 .project-section.active,
 .about-section.active,
 .education-section.active,
+.blog-section.active,
 .contact-section.active{
     position: relative;
     opacity: 1;
     z-index: 8;
 }
 
+.project-section.active .project-heading,
+.education-section.active .heading,
+.blog-section.active .blog-heading,
+.about-section.active .heading {
+    animation: slideUpFade 1s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .home-section{
     width: 100%;
     height: 100vh;
     padding: 0 150px;
     display: flex;
-    align-items: center;
+    flex-direction: column;     
+    justify-content: center;
+    align-items: flex-start;  
     position: fixed;
     top: 0;
     opacity: 0;
@@ -87,6 +161,73 @@ body{
     opacity: 0.2;
 }
 
+.social-pill {
+    margin-top: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 24px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.social-pill::before {
+    content: "";
+    position: absolute;
+    inset: -2px;                
+    border-radius: 42px;
+    z-index: -1;
+
+    background: linear-gradient(
+        90deg,
+        #00ffff,
+        #ff00ff,
+        #00ffff
+    );
+    background-size: 200% 200%;
+    animation: borderRun 3s linear infinite;
+}
+
+.social-pill::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 38px;
+    background: rgba(20, 20, 20, 0.9);
+    z-index: -1;
+}
+
+@keyframes borderRun {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.social-pill a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;                 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-pill img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.social-pill a:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+}
 
 /*project section*/
 
@@ -101,15 +242,15 @@ body{
 }
 
 .project-heading {
-    font-size: 100px;
-    background: #252525;
+    font-size: 80px;
+    background: #fffdfd;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
     color: #1a1a1a;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-stroke: 8px transparent;
+    -webkit-text-stroke: 6px transparent;
 }
 
 .project-container {
@@ -219,6 +360,17 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.about-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff; 
+    font-weight: 600;
+}
+
+.about-content{
+    padding-top: 20px;
 }
 
 .download-cv-btn{
@@ -348,14 +500,20 @@ body{
     position: fixed;
     top: 0;
     opacity: 0;
-    transition: 1s
+    transition: 1s;
+}    
+
+.education-section .heading {
+    font-size: 80px;
+    background: #fffdfd;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
 }
-
-.education-section .heading{
-    margin-bottom: 150px;
-}
-
-
 
 .card{
     width: 45%;
@@ -454,6 +612,106 @@ body{
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+.card-detail{
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: rgba(255,255,255,0.95);
+}
+
+
+/* Blog Section */
+.blog-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.blog-section.active {
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+.blog-heading {
+    font-size: 100px;
+    background: #fffdfd;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 79, 79, 0.2);
+}
+
+.blog-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.blog-card:hover .blog-img {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.blog-date {
+    display: block;
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.blog-desc {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 .contact-section{
