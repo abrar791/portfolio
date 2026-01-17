@@ -714,7 +714,6 @@ body{
 }
 
 .achievement-card {
-    /* Your original styles + background image */
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)),
         url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800');
@@ -734,7 +733,6 @@ body{
     transform: translateY(-12px);
 }
 
-/* Different background for each card (optional - recommended) */
 .achievement-card:nth-child(1) {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)),
