@@ -15,12 +15,18 @@
 
     <!-- navbar-->
     <nav class="navbar">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <ul class="link-group">
             <li class="link active"><a href="#">home</a></li>
             <li class="link"><a href="#">projects</a></li>
             <li class="link"><a href="#">about</a></li>
             <li class="link"><a href="#">education</a></li>
             <li class="link"><a href="#">blog</a></li>
+            <li class="link"><a href="#">achievement</a></li>
             <li class="link"><a href="#">contact</a></li>
         </ul>
 
@@ -158,7 +164,11 @@
         <div class="about">
             <div class="about-img-container">
                 <img src="img/mypic.jpg" class="about-img" alt="">
-                <button class="download-cv-btn">download cv</button>
+                <a href="assets/Abrar_CV.pdf" 
+                    download="Abrar_CV.pdf" 
+                    class="download-cv-btn">
+                    Download CV
+                </a>
             </div>
             <div class="about-content">
                 <h2 class="about-heading">About Me</h2>
@@ -316,16 +326,56 @@
         </div>
     </section>
 
+    <!--Achievement Section-->
+    <section class="achievements-section">
+    
+    <h1 class="achievement-heading"> my Achievement</h1>
 
+    <div class="achievements-wrapper">
+        <div class="achievements-container">
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h2 class="achievement-title center-title">Problem Solving</h2>
+                <p class="achievement-desk">
+                    Solved multiple programming problems using
+                    C++, Java for improving logical and
+                    algorithmic thinking.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🎓</div>
+                <h2 class="achievement-title center-title">Academic Project</h2>
+                <p class="achievement-desk">
+                    Successfully completed several university
+                    projects including portfolio website and
+                    data structure implementations.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">💻</div>
+                <h2 class="achievement-title center-title">Web Developmentt</h2>
+                <p class="achievement-desk">
+                    Designed and developed a responsive personal
+                    portfolio using HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 
     <!--contact section-->
     <section class="contact-section">
-        <form class="contact-form">
-            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
-            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
-            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-            <button type="submit" class="form-submit-btn">contact</button>
-        </form>
+       <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Name" required autocomplete="off">
+        <input type="email" name="email" placeholder="Email" required autocomplete="off">
+        <textarea name="message" id="msg" placeholder="Message" required autocomplete="off"></textarea>
+        <button type="submit" id="submit-btn" class="form-submit-btn">Contact</button>
+    </form>
         <!--map-->
         <div class="map">
             <iframe
