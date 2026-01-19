@@ -32,13 +32,13 @@ body{
 }
 .link a{
     color: #f0f0f0;
-    opacity: 0.80;
+    opacity: 0.90;
     text-decoration: none;
     text-transform: capitalize;
     padding: 10px 30px;
     margin: 0 20px;
     transition: .5s;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .link a:hover, .link.active a{
@@ -54,7 +54,7 @@ body{
 .about-section.active,
 .education-section.active,
 .blog-section.active,
-.achievement-section.active,
+.achievements-section.active,
 .contact-section.active{
     position: relative;
     opacity: 1;
@@ -426,9 +426,9 @@ body{
 }
 
 .skill-card:nth-child(4) .skill-level{
-    background: #9f95b028;
-    border-color: #805f1c;
-    color: #775e39;
+    background: #63074f28;
+    border-color: #cd4f90;
+    color: #d45faa;
 }
 
 .skill-card:nth-child(5) .skill-level{
@@ -668,12 +668,6 @@ body{
     opacity: 0;
     transition: 1s;
     background: #191919;
-}
-
-.achievements-section.active {
-    position: relative;
-    opacity: 1;
-    z-index: 8;
 }
 
 .achievement-heading {
