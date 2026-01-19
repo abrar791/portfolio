@@ -585,11 +585,7 @@ body{
     transition: 1s;
 }
 
-.blog-section.active {
-    position: relative;
-    opacity: 1;
-    z-index: 8;
-}
+
 
 .blog-heading {
     font-size: 100px;
